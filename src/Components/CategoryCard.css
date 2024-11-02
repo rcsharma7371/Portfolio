@@ -1,4 +1,4 @@
-.cardContainer {
+/* .cardContainer {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -8,7 +8,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-}
+} */
 
 .cardStyles {
     background-color: rgba(53, 54, 129, 0.3) !important;
@@ -22,6 +22,7 @@
         transition: 0.3s linear;
         transform: scale(1.05);
         background-color: rgba(53, 54, 129, 2) !important;
+        border-radius: 10%;
         /* border-image: linear-gradient(to right bottom, red, blue, green) 1; */
     }
 }

@@ -1,4 +1,5 @@
 import * as React from "react";
+// Material Ui import 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,12 +12,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 
+// Custome import
 import "./NavBar.css";
 import logo from "../assets/MERN-img.png";
 import { makeStyles } from "@mui/styles";
 import profile from '../assets/profile.png'
+import { Link } from "@mui/material";
 
 const pages = ["About", "Skills", "Projects"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -114,8 +116,8 @@ export default function NavBar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }} >{page}</Typography>
+                <MenuItem key={page}  onClick={handleCloseNavMenu}>
+                  <Typography sx={{ textAlign: "center" }} ><Link href={'#'+ page} sx={{textDecoration:'none',color:'black'}}>{page}</Link></Typography>
                 </MenuItem>
               ))}
             </Menu>
