@@ -30,5 +30,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_KEY }}
           REMOTE_HOST: ${{ secrets.EC2_HOST }}
           REMOTE_USER: ubuntu
-          TARGET: /home/ubuntu/portfolio
+          TARGET: /var/www/html/portfolio
           SOURCE: "dist/"
