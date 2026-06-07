@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ChatBot from "./components/ChatBot";
 
 const NAV_LINKS = ["Home", "About", "Skills", "Projects", "Experience", "Education", "Contact"];
 
@@ -585,6 +586,7 @@ export default function Portfolio() {
           </svg>
         </button>
       )}
+      <ChatBot />
     </div>
   );
 }
