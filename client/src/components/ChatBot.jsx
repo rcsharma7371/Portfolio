@@ -11,7 +11,7 @@ const suggestions = [
 ];
 
 // backend url
-const API_URL = "http://localhost:5000/api/chat";
+const API_URL = "https://ranjeetdev.in/service/api/chat";
 
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
