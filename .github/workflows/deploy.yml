@@ -19,10 +19,14 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        run: npm install
+        run: 
+          cd client
+          npm install
 
       - name: Build Frontend
-        run: npm run build
+        run: 
+          cd client
+          npm run build
 
       - name: Deploy Files
         uses: easingthemes/ssh-deploy@main
@@ -31,4 +35,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.EC2_HOST }}
           REMOTE_USER: ubuntu
           TARGET: /var/www/html/portfolio
-          SOURCE: "dist/"
+          SOURCE: "client/dist/"
