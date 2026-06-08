@@ -19,12 +19,12 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        run: 
+        run: |
           cd client
           npm install
-
+      
       - name: Build Frontend
-        run: 
+        run: |
           cd client
           npm run build
 
